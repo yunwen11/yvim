@@ -16,6 +16,7 @@
     Plugin 'scrooloose/nerdtree'
     Plugin 'jistr/vim-nerdtree-tabs'
     Plugin 'fatih/vim-go'
+    Plugin 'cespare/vim-toml'
     Plugin 'fholgado/minibufexpl.vim'
     Plugin 'guns/xterm-color-table.vim'
     Plugin 'altercation/vim-colors-solarized'
@@ -96,7 +97,7 @@ let g:tagbar_sort = 0
 
 " Nerdtree
 let NERDTreeWinPos = "right"
-let g:NERDTreeNodeDelimiter = "\u00a0"
+"let g:NERDTreeNodeDelimiter = "\u00a0"
 
 " AirLine
 let g:airline_powerline_fonts = 1
@@ -129,8 +130,9 @@ let g:mapleader = ","
 let g:NERDSpaceDelims=1
 
 " YCM
-let g:ycm_confirm_extra_conf=0
+let g:ycm_confirm_extra_conf = 0
 let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
+let g:ycm_auto_hover = ''  " not display doc
 let g:ycm_complete_in_comments = 1
 let g:ycm_complete_in_strings = 1
 let g:ycm_collect_identifiers_from_comments_and_strings = 1
@@ -169,6 +171,7 @@ hi CursorLine ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
 
 " line number color: dark
 hi LineNr ctermbg=012 ctermfg=darkgrey guibg=NONE guifg=NONE
+hi clear CursorLineNr
 hi CursorLineNr ctermbg=012 ctermfg=187 guibg=NONE guifg=NONE
 
 "set cursorcolumn
