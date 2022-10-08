@@ -117,6 +117,10 @@ let g:go_fmt_autosave = 0
 let g:go_play_open_browser = 0
 let g:go_get_update = 0
 
+" Python
+let g:pymode_options = 0
+let g:pymode_trim_whitespaces = 0
+
 " CtrlP
 let g:ctrlp_map = '<C-i>'
 
